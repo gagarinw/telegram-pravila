@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подпольная группа | Правила</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        neonPurple: '#a855f7',
+                        neonRed: '#ef4444',
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                    },
+                    boxShadow: {
+                        'neon-purple': '0 0 15px rgba(168, 85, 247, 0.4)',
+                        'neon-red': '0 0 15px rgba(239, 68, 68, 0.4)',
+                        'neon-purple-hover': '0 0 25px rgba(168, 85, 247, 0.7)',
+                        'neon-red-hover': '0 0 25px rgba(239, 68, 68, 0.7)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #475569; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a855f7; 
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+        }
+        .glow-text-red {
+            text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-300 font-sans antialiased min-h-screen selection:bg-neonPurple selection:text-white pb-12">
 
+    <header class="relative pt-20 pb-12 px-4 text-center overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute top-[-50%] left-[-10%] w-96 h-96 bg-neonPurple rounded-full mix-blend-multiply filter blur-[128px] opacity-20"></div>
+        <div class="absolute top-[-20%] right-[-10%] w-96 h-96 bg-neonRed rounded-full mix-blend-multiply filter blur-[128px] opacity-20"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-neonPurple to-neonRed tracking-tight mb-4 uppercase drop-shadow-[0_0_15px_rgba(168,85,247,0.3)]">
+                Подпольная группа
+            </h1>
+            <p class="text-xl md:text-2xl font-semibold text-gray-400 mt-2">
+                Главные администраторы: <br class="md:hidden" />
+                <span class="text-white glow-text">Артем Байзо</span> и <span class="text-white glow-text">Илья Терентьев</span>
+            </p>
+            <div class="mt-8 h-1 w-32 bg-gradient-to-r from-neonPurple to-neonRed mx-auto rounded-full shadow-neon-purple"></div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 space-y-16">
+
+        <!-- Важное объявление (Highlighted) -->
+        <section class="relative group">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-neonRed to-orange-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
+            <div class="relative bg-cardBg border border-red-500/30 p-8 md:p-10 rounded-2xl shadow-neon-red">
+                <div class="flex items-center gap-4 mb-4">
+                    <svg class="w-8 h-8 text-neonRed animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white uppercase glow-text-red">Важное объявление</h2>
+                </div>
+                <p class="text-gray-300 text-lg leading-relaxed mb-4">
+                    На данный момент проводится <strong class="text-white">полный сброс состава модерации</strong>. Права снимаются абсолютно со всех действующих администраторов и модераторов.
+                </p>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    Возврат прав и выдача новых рангов осуществляются <span class="text-neonRed font-semibold">ТОЛЬКО</span> за регулярную активность, реальную помощь участникам группы и проявленную инициативность. Старые заслуги больше не учитываются.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-neonPurple pl-4 flex items-center">
+                <span class="mr-3">🚫</span> Запрещено
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Правило 1 -->
+                <div class="bg-cardBg/80 border border-gray-700 p-6 rounded-xl hover:border-neonPurple/50 hover:shadow-neon-purple-hover transition-all duration-300 group">
+                    <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-neonPurple transition-colors">1. Оскорбления</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                        Оскорбление администрации и других участников строго запрещено. Любые формы агрессии, травли и переход на личности недопустимы в адрес всех, <span class="text-neonPurple font-bold">кроме Скалозуба и Черри</span>.
+                    </p>
+                </div>
+
+                <!-- Правило 2 -->
+                <div class="bg-cardBg/80 border border-gray-700 p-6 rounded-xl hover:border-neonPurple/50 hover:shadow-neon-purple-hover transition-all duration-300 group">
+                    <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-neonPurple transition-colors">2. Флуд</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                        Запрещена массовая отправка коротких, бессмысленных сообщений, злоупотребление стикерами, GIF-анимациями или написание текста в верхнем регистре (КАПСОМ).
+                    </p>
+                </div>
+
+                <!-- Правило 3 -->
+                <div class="bg-cardBg/80 border border-gray-700 p-6 rounded-xl hover:border-neonPurple/50 hover:shadow-neon-purple-hover transition-all duration-300 group">
+                    <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-neonPurple transition-colors">3. Запрещенный контент</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                        Строго запрещена публикация материалов порнографического характера (18+), шок-контента, сцен чрезмерной жестокости и насилия.
+                    </p>
+                </div>
+
+                <!-- Правило 4 -->
+                <div class="bg-cardBg/80 border border-gray-700 p-6 rounded-xl hover:border-neonPurple/50 hover:shadow-neon-purple-hover transition-all duration-300 group">
+                    <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-neonPurple transition-colors">4. Провокации</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                        Запрещено разжигание конфликтов, споров и агрессии на почве политики, религии или национальности. Оставляйте эти темы за пределами чата.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-neonRed pl-4 flex items-center">
+                <span class="mr-3">⚖️</span> Меры наказания
+            </h2>
+            
+            <div class="flex flex-col gap-4">
+                <!-- Варн -->
+                <div class="flex items-start p-5 bg-cardBg border border-gray-700 rounded-xl hover:bg-gray-800 transition-colors">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-yellow-500/20 text-yellow-500 flex items-center justify-center font-bold text-xl mr-4 border border-yellow-500/30">
+                        !
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1">Предупреждение (Варн)</h3>
+                        <p class="text-gray-400">Выдается за мелкие нарушения правил. Накопление определенного количества предупреждений автоматически конвертируется в мут.</p>
+                    </div>
+                </div>
+
+                <!-- Мут -->
+                <div class="flex items-start p-5 bg-cardBg border border-gray-700 rounded-xl hover:bg-gray-800 transition-colors">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-orange-500/20 text-orange-500 flex items-center justify-center font-bold text-xl mr-4 border border-orange-500/30">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1">Ограничение сообщений (Мут)</h3>
+                        <p class="text-gray-400">Временное лишение права писать в чат. Выдается за прямые оскорбления, игнорирование предупреждений или намеренный флуд. Срок устанавливается на усмотрение модератора.</p>
+                    </div>
+                </div>
+
+                <!-- Бан -->
+                <div class="flex items-start p-5 bg-cardBg border border-red-500/30 rounded-xl hover:bg-gray-800 hover:shadow-neon-red-hover transition-all duration-300">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 text-neonRed flex items-center justify-center font-bold text-xl mr-4 border border-red-500/50">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1">Блокировка (Бан)</h3>
+                        <p class="text-gray-400">Полное исключение из группы навсегда. Применяется за шок-контент, систематическое, грубое нарушение правил и явное неуважение к администрации.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-blue-500 pl-4 flex items-center">
+                <span class="mr-3">🛡️</span> Правила для администрации
+            </h2>
+            <p class="text-gray-400 mb-6 text-lg">Условия понижения или полного снятия прав:</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-gray-800/50 p-4 rounded-lg border-l-2 border-blue-500 hover:bg-gray-800 transition-colors">
+                    <h4 class="text-white font-bold mb-1">1. Превышение полномочий</h4>
+                    <p class="text-sm text-gray-400">Беспричинная выдача наказаний, использование прав ради шутки или личной неприязни.</p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg border-l-2 border-blue-500 hover:bg-gray-800 transition-colors">
+                    <h4 class="text-white font-bold mb-1">2. Нарушение правил</h4>
+                    <p class="text-sm text-gray-400">Администрация не освобождается от соблюдения общих правил группы.</p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg border-l-2 border-blue-500 hover:bg-gray-800 transition-colors">
+                    <h4 class="text-white font-bold mb-1">3. Бездействие</h4>
+                    <p class="text-sm text-gray-400">Отсутствие активности, игнорирование нарушений и просьб участников о помощи.</p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg border-l-2 border-blue-500 hover:bg-gray-800 transition-colors">
+                    <h4 class="text-white font-bold mb-1">4. Конфликты в составе</h4>
+                    <p class="text-sm text-gray-400">Разведение споров между модераторами и открытое неподчинение главным администраторам.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Подпольная группа. Незнание правил не освобождает от ответственности.</p>
+    </footer>
+
+</body>
+</html>
